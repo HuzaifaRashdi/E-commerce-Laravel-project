@@ -20,11 +20,31 @@
     @yield('content')
 
     {{View::make('footer')}}
+
 </body>
 <style>
     .custom-login{
         height:500px;
         padding-top:100px;
+    }
+    img.slidder-img{
+        height: 400px !important;
+    }
+    .custom-products{
+        height: 700px;
+    }
+    .slidder-text{
+        background-color: #004b8073 !important;
+    }
+    .trending-img{
+        height: 100px;
+    }
+    .trending-items{
+        float:left;
+        width: 25%;
+    }
+    .detail-img{
+        height: 300px;
     }
 </style>
 </html>
