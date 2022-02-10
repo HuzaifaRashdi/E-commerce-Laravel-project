@@ -14,12 +14,13 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/login', function () {
-    // return 'hit';
-    return view('login');
-});
- 
+// Route::get('/login', function () {
+//     // return 'hit';
+//     return view('login');
+// });
+Route::view("login","login");
 Route::post("/login",[userController::class,'login']);
 Route::get("/",[ProductController::class,'index']);
 Route::get("detail/{id}",[ProductController::class,'detail']);
 Route::get("search",[ProductController::class,'search']);
+Route::post("/add_to_cart",[ProductController::class,'addToCart']);

@@ -3,19 +3,25 @@
 
 <div class="custom-products">
     
+<div class="col-sm-4">
+  <a href="#">Filter</a>
+</div>
+<div class="col-sm-4">
 <div class="trending-wrapper">
-  <h1>Trending Products</h1>
+  <h4>Result for Products</h4>
     @foreach ($products as $item)
-    <div class="trending-items">
+    <div class="searched-items">
     <a href="detail/{{$item['id']}}">
       <img class="trending-img" src="{{$item['gallery']}}" >
       <div class="">
-        <h3>{{$item['name']}}</h3>
+        <h2>{{$item['name']}}</h2>
+        <h5>{{$item['description']}}</h5>
       </div>
 </a>
     </div>
     @endforeach
    </div>
+</div>
 
 </div>
 
